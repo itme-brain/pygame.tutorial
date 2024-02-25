@@ -2,10 +2,10 @@ import sys
 
 import pygame
 
-from scripts.entities import PhysicsEntity, Player
-from scripts.utils import load_image, load_images, Animation
-from scripts.tilemap import Tilemap
-from scripts.clouds import Clouds
+from src.scripts.entities import PhysicsEntity, Player
+from src.scripts.utils import load_image, load_images, Animation
+from src.scripts.tilemap import Tilemap
+from src.scripts.clouds import Clouds
 
 class Game:
     def __init__(self):
@@ -78,5 +78,3 @@ class Game:
             self.screen.blit(pygame.transform.scale(self.display, self.screen.get_size()), (0, 0))
             pygame.display.update()
             self.clock.tick(60)
-
-Game().run()
